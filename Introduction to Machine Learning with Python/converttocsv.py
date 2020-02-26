@@ -25,6 +25,8 @@ def toCsv(content):
     return newContent
 
 
+
+
 for file in files:
     with open(file,"r") as inFile:
         content = inFile.readlines()

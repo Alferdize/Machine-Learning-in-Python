@@ -2,7 +2,7 @@ from pandas import read_csv
 from matplotlib import pyplot as plt
 
 
-def ploting(data,values):
+def ploting(data, values):
     plt.figure()
     for i in range(values.shape[1]):
         plt.subplot(values.shape[1], 1, i+1)
@@ -10,12 +10,7 @@ def ploting(data,values):
     plt.show()
 
 
-
-
-
-
-
 if __name__ == "__main__":
-    eye_data = read_csv("Eye_State.csv",header=None)
+    eye_data = read_csv("Eye_State.csv", header=None)
     values = eye_data.values
-    ploting(eye_data,values)
+    ploting(eye_data, values)
